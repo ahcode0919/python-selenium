@@ -1,6 +1,6 @@
-# Selenium Automation With Python
+# Selenium Automation With Python [![Build Status](https://travis-ci.com/ahcode0919/python-selenium.svg?branch=main)](https://travis-ci.com/ahcode0919/python-selenium)
 
-Selenium automation project implemented in Python
+Selenium automation project implemented in Python. Runs a small suite of tests against [Choose a License](https://choosealicense.com)
 
 ## Dependencies
 
@@ -10,6 +10,11 @@ Selenium automation project implemented in Python
 
 - `pipenv` - Project supports `pipenv` for managing dependencies
     - `pipenv install` - Install packages
+
+## Commands
+
+- `pipenv shell` - Start virtualenv shell
+- `pytest` - Run all Selenium tests
 
 ## Configuration Details
 
