@@ -1,4 +1,4 @@
-from pages.home_page import HomePage
+from page_objects.home_page import HomePage
 from setup.setup import UITest
 
 

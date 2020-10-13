@@ -1,0 +1,20 @@
+# references:
+# Travis-CI - Python : https://docs.travis-ci.com/user/languages/python/
+
+language: python
+python:
+  - "3.8"
+
+services:
+  - xvfb
+
+# command to install dependencies
+install:
+  - pip install pylint
+  - pip install pipenv
+  - pipenv install
+
+# command to run tests
+script:
+  - python compile_files.py
+  - pytest
