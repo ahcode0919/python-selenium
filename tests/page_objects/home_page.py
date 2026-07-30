@@ -1,11 +1,12 @@
 from selenium.webdriver.remote.webdriver import WebDriver
-
-from page_objects.base_page import BasePage
-from page_objects.mit_license_page import MitLicensePage
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from tests.page_objects.base_page import BasePage
+from tests.page_objects.mit_license_page import MitLicensePage
 
 
 class HomePage(BasePage):
-    COMMUNITY_LINK_TEXT = 'community'
+    COMMUNITY_LINK_TEXT = (By.TEXT, 'community')
     GNU_GPL_V3_LINK_TEXT = 'GNU GPLv3'
     HEADING = 'h1'
     MIT_LICENSE_LINK_TEXT = 'MIT License'

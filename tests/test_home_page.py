@@ -1,5 +1,5 @@
-from page_objects.home_page import HomePage
-from setup.setup import UITest
+from tests.page_objects.home_page import HomePage
+from tests.setup.setup import UITest
 
 
 class TestHomePage(UITest):

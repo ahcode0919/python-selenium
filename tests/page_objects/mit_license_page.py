@@ -1,6 +1,6 @@
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from page_objects.base_page import BasePage
+from tests.page_objects.base_page import BasePage
 
 
 class MitLicensePage(BasePage):
