@@ -20,7 +20,7 @@ class BasePage:
         self.driver.get(url)
         return self
 
-    def type(self, locator, text):
+    def fill(self, locator, text: str):
         el = self.find(locator)
         el.clear()
         el.send_keys(text)
