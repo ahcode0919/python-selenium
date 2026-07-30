@@ -1,4 +1,3 @@
-from tests.page_objects.base_page import BasePage
 from tests.page_objects.mit_license_page import MitLicensePage
 from tests.setup.setup import UITest
 

@@ -1,5 +1,4 @@
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium import  webdriver
 
 
 class UITest:
@@ -14,8 +13,9 @@ class UITest:
         cls.driver = None
 
     def setup_method(self, method):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(15)
 
     def teardown_method(self, method):
-        self.driver.quit()
+        if self.driver:
+            self.driver.quit()
