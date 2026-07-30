@@ -21,8 +21,3 @@ Note: Project uses `uv` and `just` to manage project configuration and commands
   * `just lint` - lint and stylecheck project files
 * Run unit tests: `just test`
 * Install dependency: `uv add {package}`
-
-## Configuration Details
-
-- [Pipenv](https://pypi.org/project/pipenv/) - Pipenv project packaging tool
-- [Webdriver Manager](https://pypi.org/project/webdriver-manager/) - Handles download of browser specific Webdrivers
