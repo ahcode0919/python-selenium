@@ -1,9 +1,7 @@
-from page_objects.base_page import BasePage
-from page_objects.mit_license_page import MitLicensePage
-from setup.setup import UITest
+from tests.page_objects.mit_license_page import MitLicensePage
 
 
-class TestMitLicensePage(UITest):
-    def test_license_text_displayed(self):
-        mit_license_page = MitLicensePage(self.driver).open()
+class TestMitLicensePage:
+    def test_license_text_displayed(self, driver):
+        mit_license_page = MitLicensePage(driver).open()
         assert mit_license_page.license_text_displayed()

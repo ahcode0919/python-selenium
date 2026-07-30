@@ -1,0 +1,36 @@
+[project]
+name = "python-selenium"
+version = "0.1.0"
+description = "Selenium automation example in python"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "selenium>=4.46.0",
+]
+
+[dependency-groups]
+dev = [
+    "codespell>=2.4.3",
+    "pytest>=9.1.1",
+    "ruff>=0.16.0",
+]
+
+[tool.codespell]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "D"]  # Choose your rule categories
+ignore = ["D100", "D104", "D211", "D203", "D213", "D400", "D401", "D415"]
+extend-ignore = ["E501"]  # Line too long (handled by formatter)
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D"]  # Ignore docstring (D) errors in tests
+
+[tool.ruff.format]
+quote-style = "double"

@@ -1,22 +1,23 @@
-# Selenium Automation With Python [![Build Status](https://travis-ci.com/ahcode0919/python-selenium.svg?branch=main)](https://travis-ci.com/ahcode0919/python-selenium)
+# Selenium Automation With Python ![](https://github.com/ahcode0919/python-selenium/actions/workflows/ci.yml/badge.svg?branch=main)
 
 Selenium automation project implemented in Python. Runs a small suite of tests against [Choose a License](https://choosealicense.com)
 
-## Dependencies
-
-- Python 3.8+
-
 ## Setup
 
-- `pipenv` - Project supports `pipenv` for managing dependencies
-    - `pipenv install` - Install packages
+Project supports local development and VSCode Dev container development
 
-## Commands
+### Local Development Installation
 
-- `pipenv shell` - Start virtualenv shell
-- `pytest` - Run all Selenium tests
+Note: Project uses `uv` and `just` to manage project configuration and commands
 
-## Configuration Details
+* Install dependencies via Homebrew - `brew bundle install`
+* Sync project - `just sync`
 
-- [Pipenv](https://pypi.org/project/pipenv/) - Pipenv project packaging tool
-- [Webdriver Manager](https://pypi.org/project/webdriver-manager/) - Handles download of browser specific Webdrivers
+## Project Commands
+
+* Local
+  * `just lint` - lint project files
+* Dev container
+  * `just lint` - lint and stylecheck project files
+* Run unit tests: `just test`
+* Install dependency: `uv add {package}`
